@@ -83,7 +83,7 @@ export const ImagesProvider = ({ children }) => {
     } else {
       toast("We're sorry, but you've reached the end of search results.", {
         icon: '👏',
-        css: {
+        style: {
           borderRadius: '10px',
           background: '#333',
           color: '#fff',

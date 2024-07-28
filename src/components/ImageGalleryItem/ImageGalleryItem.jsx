@@ -4,7 +4,6 @@ import Modal from '../Modal/Modal';
 import css from './ImageGalleryItem.module.css';
 import { useToggle } from 'hooks/useToggle';
 
-
 const ImageGalleryItem = ({ image }) => {
   const { showModal, toggle } = useToggle();
   const { webformatURL, largeImageURL, tags } = image;
@@ -15,10 +14,10 @@ const ImageGalleryItem = ({ image }) => {
 
     if (showModal) {
       console.log('Modal is now shown');
-      gallery.css.pointerEvents = 'none';
+      gallery.style.pointerEvents = 'none';
     } else {
       console.log('Modal is now hidden');
-      gallery.css.pointerEvents = 'auto';
+      gallery.style.pointerEvents = 'auto';
     }
   }, [showModal]);
 

@@ -5,7 +5,7 @@ import Button from './Button/Button';
 import Loader from './Loader/Loader';
 import css from './App.module.css';
 import { Toaster } from 'react-hot-toast';
-import { useImages } from '../context/ImagesContext';
+import { useImages } from 'context/ImagesContext';
 
 const App = () => {
   const {
